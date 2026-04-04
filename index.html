@@ -611,7 +611,7 @@ function kirimTelegram() {
   .then(res => res.json())
   .then(data => {
     if (data.ok) {
-      alert("✅ Berhasil dikirim ke Telegram!");
+      alert("✅ Berhasil dikirim!");
       textarea.value = "";
       document.getElementById("dana").value = "";
       document.getElementById("whatsapp").value = "";
