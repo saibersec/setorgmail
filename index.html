@@ -440,8 +440,46 @@
       background: var(--border);
       margin: 16px 0;
     }
+
+    .floating-contact {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 99;
+}
+
+.floating-contact div {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.floating-contact div:hover {
+  border-color: var(--accent);
+  background: rgba(56,189,248,0.1);
+}
+
   </style>
 </head>
+
+<div class="floating-contact">
+  <div onclick="window.open('https://wa.me/6283138173201','_blank')">📞</div>
+  <div onclick="window.open('https://whatsapp.com/channel/0029VbCkMiwEgGfICNZNQW3g','_blank')">📢</div>
+  <div onclick="window.open('https://chat.whatsapp.com/FiO0LVj9Oe6LCeIcEHzjwB?mode=gi_t','_blank')">👥</div>
+</div>
+
 <body>
 
 <div class="orb orb-1"></div>
@@ -532,6 +570,8 @@
       </div>
     </button>
   </div>
+
+  
 
 </div>
 
